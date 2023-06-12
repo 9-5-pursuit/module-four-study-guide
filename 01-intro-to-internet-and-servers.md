@@ -50,8 +50,33 @@
 | __Body__ | The optional part of an HTTP request or response that contains data or content. For example, in a request, the body may include form data entered by a user, while in a response, it may contain HTML content to be rendered by a browser. |
 
 - What does HTTP stand for and what is its purpose?
-- Explain the components of a URL.
+- What is a URL and what purpose does it serve?
 - What is the difference between the header and body in an HTTP request or response?
+
+### URL Components
+
+Let's break down the contents of a complex URL:
+
+```
+ https://www.example.org:3000/hello/world/index.html?name=foo&limit=20#footer
+ \___/ \_______________/ \__/ \___________________/ \_______________/ \____/
+protocol  host/domain    port         path            query-string  hash/fragment
+```
+
+The URL components are always in the same order.
+
+| Element | About |
+| ------- | ----- |
+| __protocol__ | The application protocol in this example is HTTP or HTTPS (`S` stands for secure). Other familiar types of application protocols include SMTP/POP, and SSH. |
+| __host/domain name__ | The server's name that provides the resource. |
+| __port__ | A server can have multiple ports. Multiple ports allow users to access different applications on the same host. The port is usually pre-configured, so it typically does not need to be included in the URL to locate a resource. |
+| __path__ | Web servers can organize resources into a system similar to files and folders in directories. |
+| __query-string__ | The client can pass parameters to the server through the query-string. The query-string allows for additional request information to be passed through the URL. For example, if you go to an international website, it may have `lang=en`, which means respond with a web page in English. |
+| __hash/fragment__ | The client can use a hash/fragment to identify some portion of the content in the response. If you click on an element in the table of contents on this page, the page will scroll down to that section and you will see a hash fragment in the URL corresponding to the section. If you send your friend the link with the hash fragment the page will load and automatically scroll down to the section. |
+
+- What is a protocol?
+- What is the purpose of the query-string in a URL?
+- How does the hash/fragment component in a URL contribute to the user experience of a web page?
 
 ---
 
