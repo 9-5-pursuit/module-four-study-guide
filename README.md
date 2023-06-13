@@ -2,3 +2,4 @@
 
 1. [Intro to the Internet and Servers](./01-intro-to-internet-and-servers.md)
 1. [Intro to Express Response](./02-intro-to-express-response.md)
+1. [Intro to Express Request](./03-intro-to-express-request.md)
