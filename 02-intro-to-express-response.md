@@ -4,26 +4,62 @@
 | ---- | ---------- |
 | __Node__ | An open-source project that lets us run JavaScript in the Terminal. Previous to nodeJS, JavaScript could only be run in the browser. |
 | __npm__ | Node Package Manager: an extensive library of 3rd party packages for Node. |
-| __Express__ | A popular npm framework that allows developers to build complex back ends. |
+| __Express__ | A code framework hosted on npm and written in JavaScript for building web servers. |
 | __Route__ | In Express, a route is like an event listener that listens for requests to a specific URL. It determines how the server should respond when a client makes a request to that URL. |
 | __Request Object__ | The `request` object in Express represents the HTTP request sent by the client to the server. It contains information about the request, such as the URL, headers, query parameters, and request body. |
 | __Response Object__ | The `response` object in Express represents the HTTP response sent by the server back to the client. It is used to send data, set response headers, and control the response behavior. |
-| `app.get()` | An Express method used to define a route that handles HTTP GET requests. It specifies the URL pattern and the function to execute when a client makes a GET request to that URL. |
-| `response.send()` | A method of the `response` object in Express. It sends a response back to the client, which can be a string, an object, HTML, or other data. Express automatically converts the provided data to the appropriate response format. |
-| `app.listen()` | An Express method used to start the server and listen for incoming requests on a specified port number. |
 
 ## Editing `package.json`
 
 When editing the `package.json` you must write proper JSON (JavaScript Object Notation). It is very similar to a JavaScript Object, but it is a bit more strict.
 
-you MUST:
+YOU MUST:
 
 - use double quotes (never single quotes)
 - use double quotes around object keys, numbers, and booleans.
 - create and maintain valid JS objects, arrays, and strings.
 - NOT have any trailing commas
 
-## Writing an Express Application
+## Intializing an Express Application
+
+```js
+const express = require('express');
+const app = express();
+```
+
+- What is the role of `const express = require("express")` in the code?
+- What does `const app = express()` do in the code?
+
+## Creating a basic route
+
+```js
+app.get("/", (request, response) => {
+  response.send("Hello World");
+});
+```
+
+- What does `app.get("/", (request, response) => { ... })` define in the Express application?
+- What is the purpose of `response.send("Hello World")`?
+- What is the significance of using the root path `/` in `app.get("/", ...)`?
+- How would you make a request for the `/universe` route instead?
+- How can you modify the code to handle a POST request instead of a GET request?
+- Can you explain the purpose of the request and response parameters in the callback function?
+
+## Starting the server
+
+```js
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+```
+
+- What does `app.listen(PORT, () => {...})` do in the code?
+- How can you access the Express application in a web browser after running this code?
+- What would happen if you change the port number to a different value?
+- How can you gracefully shut down the Express application when it's running?
+
+## Putting it all together
 
 ```js
 // app.js
@@ -42,18 +78,6 @@ app.listen(3003, () => {
   console.log("I am listening for requests on port 3003!");
 });
 ```
-
-- What is the role of `const express = require("express")` in the code?
-- What does `app.get("/", (request, response) => { ... })` define in the Express application?
-- What is the purpose of `response.send("Hello World")`?
-- What does `app.listen(3003)` do in the code?
-- How can you access the Express application in a web browser after running this code?
-- What is the significance of using the root path `/` in `app.get("/", ...)`?
-- How would you make a request for the `/universe` route instead?
-- How can you modify the code to handle a POST request instead of a GET request?
-- Can you explain the purpose of the request and response parameters in the callback function?
-- What would happen if you change the port number in `app.listen(3003)` to a different value?
-- How can you gracefully shut down the Express application when it's running?
 
 ---
 
