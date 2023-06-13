@@ -23,7 +23,10 @@ YOU MUST:
 ## Intializing an Express Application
 
 ```js
+// DEPENDENCIES
 const express = require('express');
+
+// CONFIGURATION
 const app = express();
 ```
 
@@ -33,6 +36,7 @@ const app = express();
 ## Creating a basic route
 
 ```js
+// ROUTES
 app.get("/", (request, response) => {
   response.send("Hello World");
 });
@@ -48,7 +52,10 @@ app.get("/", (request, response) => {
 ## Starting the server
 
 ```js
-const PORT = 3000;
+// CONFIGURATION
+const PORT = 3003;
+
+// LISTENER
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
@@ -62,19 +69,20 @@ app.listen(PORT, () => {
 ## Putting it all together
 
 ```js
-// app.js
-const express = require("express");
-const app = express();
+// DEPENDENCIES
+const express = require('express');
 
+// CONFIGURATION
+const app = express();
+const PORT = 3003;
+
+// ROUTES
 app.get("/", (request, response) => {
   response.send("I love express!");
 });
 
-app.get("/universe", (request, response) => {
-  response.send("Hello Universe!");
-});
-
-app.listen(3003, () => {
+// LISTENER
+app.listen(PORT, () => {
   console.log("I am listening for requests on port 3003!");
 });
 ```
