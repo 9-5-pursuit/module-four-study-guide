@@ -29,13 +29,13 @@ const app = express();
 ```
 
 <details>
-<summary><strong>What is the purpose of the <code>const express = require("express")</code> statement in the code?</strong>
+<summary><strong>What is the purpose of the <code>const express = require("express")</code> statement in the code?</strong></summary>
 
 The `require("express")` statement imports the Express module, allowing us to use its functionalities in our code. By assigning it to the `express` constant, we can access the Express features and create an Express application.
 </details>
 
 <details>
-<summary><strong>What does <code>const app = express()</code> do in the code?</strong>
+<summary><strong>What does <code>const app = express()</code> do in the code?</strong></summary>
 
 `const app = express()` creates an instance of the Express application. We assign it to the `app` constant, which we can then use to define routes and set up the server.
 </details>
@@ -50,25 +50,25 @@ app.get("/", (request, response) => {
 ```
 
 <details>
-<summary><strong>What does <code>app.get('/', (request, response) => { ... })</code> define in the Express application?</strong>
+<summary><strong>What does <code>app.get('/', (request, response) => { ... })</code> define in the Express application?</strong></summary>
 
 This code defines a route for handling HTTP GET requests to the root path (`/`) of the server. The callback function `(request, response) => { ... }` specifies the actions to be taken when a GET request is received at the root path.
 </details>
 
 <details>
-<summary><strong>What is the purpose of <code>response.send('Hello World')</code>?</strong>
+<summary><strong>What is the purpose of <code>response.send('Hello World')</code>?</strong></summary>
 
 `response.send('Hello World')` is used to send the response back to the client when a request is made to the defined route. In this case, it sends the string `'Hello World'` as the response, which will be displayed in the client's browser or application.
 </details>
 
 <details>
-<summary><strong>What is the significance of using the root path <code>'/'</code> in <code>app.get('/', ...)</code>?</strong>
+<summary><strong>What is the significance of using the root path <code>'/'</code> in <code>app.get('/', ...)</code>?</strong></summary>
 
 Using the root path `'/'` as the route in `app.get('/', ...)` means that the route will be triggered when a client accesses the main URL of the server (e.g., `http://localhost:3003/`). It serves as the entry point for the application.
 </details>
 
 <details>
-<summary><strong>How would you make a request for the <code>/universe</code> route instead?</strong>
+<summary><strong>How would you make a request for the <code>/universe</code> route instead?</strong></summary>
 
 To make a request for the `/universe` route, you would need to modify the code to define a new route. For example:
 
@@ -80,7 +80,7 @@ app.get('/universe', (request, response) => {
 </details>
 
 <details>
-<summary><strong>How can you modify the code to handle a POST request instead of a GET request?</strong>
+<summary><strong>How can you modify the code to handle a POST request instead of a GET request?</strong></summary>
 
 To modify the code to handle a POST request, you can change `app.get` to `app.post` and update the corresponding callback function to handle the POST request logic. For example:
 
@@ -92,7 +92,7 @@ app.post('/', (request, response) => {
 </details>
 
 <details>
-<summary><strong>Can you explain the purpose of the request and response parameters in the callback function?</strong>
+<summary><strong>Can you explain the purpose of the request and response parameters in the callback function?</strong></summary>
 
 - The `request` parameter represents the HTTP request sent by the client to the server. It contains information about the request, such as the URL, headers, query parameters, and request body. The `request` object allows us to access and process the data sent by the client.
 
@@ -112,25 +112,25 @@ app.listen(PORT, () => {
 ```
 
 <details>
-<summary><strong>What does <code>app.listen(PORT, () => { ... })</code> do in the code?</strong>
+<summary><strong>What does <code>app.listen(PORT, () => { ... })</code> do in the code?</strong></summary>
 
 `app.listen(PORT, () => { ... })` starts the server and makes it listen for incoming requests on the specified `PORT`. Once the server is running, the callback function is executed, which in this case logs a message to the console confirming that the server is listening on the specified port.
 </details>
 
 <details>
-<summary><strong>How can you access the Express application in a web browser after running this code?</strong>
+<summary><strong>How can you access the Express application in a web browser after running this code?</strong></summary>
 
 After running the code and starting the server, you can access the Express application by opening a web browser and entering the URL `http://localhost:3003` (assuming the server is running on port `3003`). The browser will send a GET request to the server, and the defined route for '/' will handle the request and send the response, which will be displayed in the browser.
 </details>
 
 <details>
-<summary><strong>What would happen if you change the port number to a different value?</strong>
+<summary><strong>What would happen if you change the port number to a different value?</strong></summary>
 
 If you change the port number to a different value in the `PORT` constant and start the server, the Express application will listen for incoming requests on the new port instead. To access the application in a web browser, you would need to use the updated port number in the URL (e.g., `http://localhost:<new_port>`).
 </details>
 
 <details>
-<summary><strong>How can you gracefully shut down the Express application when it's running?</strong>
+<summary><strong>How can you gracefully shut down the Express application when it's running?</strong></summary>
 
 To gracefully shut down the Express application when it's running, you can press `Ctrl + C` in the terminal or command prompt where the server is running. This keyboard shortcut sends a signal to the server process, causing it to terminate and release the port it was using. After shutting down the server, the application will no longer be accessible.
 </details>
@@ -165,19 +165,19 @@ app.listen(PORT, () => {
 | __Nodemon__ | A tool that monitors your Node.js application for file changes and automatically restarts the server whenever a file is modified and saved. This helps streamline the development workflow by eliminating the need to manually restart the server after every code change. |
 
 <details>
-<summary><strong>What is the purpose of nodemon in a Node.js application development workflow?</strong>
+<summary><strong>What is the purpose of nodemon in a Node.js application development workflow?</strong></summary>
 
 The purpose of nodemon in a Node.js application development workflow is to monitor the files in your project and automatically restart the Node.js server whenever a file is modified and saved. It eliminates the need to manually stop and restart the server after each code change, providing a seamless development experience.
 </details>
 
 <details>
-<summary><strong>How does nodemon help streamline the development process when working with Node.js applications?</strong>
+<summary><strong>How does nodemon help streamline the development process when working with Node.js applications?</strong></summary>
 
 Nodemon streamlines the development process by eliminating the need for manual server restarts. It saves developers time and effort by automatically detecting file changes and restarting the server. With nodemon, developers can focus on writing code and testing changes without the interruption of manually restarting the server after every modification.
 </details>
 
 <details>
-<summary><strong>How can you install nodemon globally using npm?</strong>
+<summary><strong>How can you install nodemon globally using npm?</strong></summary>
 
 To install nodemon globally using npm, you can run the following command in your terminal or command prompt:
 
@@ -189,13 +189,13 @@ The `-g` flag indicates that nodemon should be installed globally, making it acc
 </details>
 
 <details>
-<summary><strong>What happens when a file is modified and saved while nodemon is running?</strong>
+<summary><strong>What happens when a file is modified and saved while nodemon is running?</strong></summary>
 
 When a file is modified and saved while nodemon is running, nodemon detects the change and automatically restarts the Node.js server. It re-executes the application, loading the updated code, and allows you to see the changes immediately without having to manually restart the server.
 </details>
 
 <details>
-<summary><strong>How can you start the server using nodemon after installing it globally?</strong>
+<summary><strong>How can you start the server using nodemon after installing it globally?</strong></summary>
 
 After installing nodemon globally, you can start the server using nodemon by running the following command in your project directory:
 
