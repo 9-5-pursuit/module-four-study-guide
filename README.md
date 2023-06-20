@@ -13,3 +13,4 @@ Welcome to the 9.5 Module 4 definitive study guide! This guide is designed to he
 ## Table of Contents
 
 1. [Intro to the Internet and Servers](./01-intro-to-internet-and-servers.md)
+2. [Intro to Express Response](./02-intro-to-express-response.md)
