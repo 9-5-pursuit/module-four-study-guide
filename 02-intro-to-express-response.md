@@ -222,6 +222,7 @@ If you don't properly shut down your server before putting your computer to slee
     To find the process number associated with Nodemon, use the command: `ps -A | grep Nodemon`. This command retrieves the process status (`ps`) of all processes (`-A`) and uses the `grep` command to specifically search for the term `"Nodemon"`.
 
     ![](./images/ps-grep.png)
+
     *On the left, you will see the process number. In this case, it is `26625`.*
 
 2. Kill the Process
