@@ -273,3 +273,10 @@ These are just a few examples, and there are many more status codes available to
 </details>
 
 ---
+
+## Class Drawings
+
+![](images/intro-to-servers-class-drawing-1.png)
+![](images/intro-to-servers-class-drawing-2.png)
+![](images/intro-to-servers-class-drawing-3.png)
+![](images/intro-to-servers-class-drawing-4.png)
