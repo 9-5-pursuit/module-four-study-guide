@@ -220,7 +220,7 @@ module.exports = [
 In the example above, the exported array contains a mix of strings, a number, a boolean, an object, and another array. This flexibility allows for the representation of more complex data structures or different types of information within the same array.
 </details>
 
-## App Setup to Show All Data
+## Showing All Data
 
 ```js
 // app.js
@@ -478,7 +478,7 @@ app.get("/rocks/:index", (req, res) => {
 ```
 
 <details>
-<summary><strong>In the "WRONG" code snippet, explain why the `/rocks/awesome` route will never be reached.</strong></summary>
+<summary><strong>In the "WRONG" code snippet, explain why the <code>/rocks/awesome</code> route will never be reached.</strong></summary>
 
 In the "WRONG" code snippet, the `/rocks/awesome` route will never be reached because the preceding route `/rocks/:index` with a parameter placeholder (`:index`) will match any path starting with `/rocks/` followed by any value. Since `awesome` is a valid value for the `:index` parameter, the request to `/rocks/awesome` will match the `/rocks/:index` route instead of the intended `/rocks/awesome` route. Therefore, the `/rocks/awesome` route will never be reached in this scenario.
 </details>
@@ -490,7 +490,7 @@ Express processes routes in the order they are defined, and the first route that
 </details>
 
 <details>
-<summary><strong>How does the "RIGHT" code snippet ensure that the `/rocks/awesome` route is reachable and returns the expected response?</strong></summary>
+<summary><strong>How does the "RIGHT" code snippet ensure that the <code>/rocks/awesome</code> route is reachable and returns the expected response?</strong></summary>
 
 In the "RIGHT" code snippet, the `/rocks/awesome` route is defined before the `/rocks/:index` route. This ensures that when a request is made to `/rocks/awesome`, it will match the specific `/rocks/awesome` route handler before reaching the generic `/rocks/:index` route. By placing the specific route before the generic route, the intended `/rocks/awesome` route becomes reachable, and the response with the appropriate HTML content is returned as expected.
 </details>
@@ -518,25 +518,25 @@ app.get("/hello/:firstName/:lastName", (req, res) => {
 ```
 
 <details>
-<summary><strong>Describe the purpose of the `/hello/:firstName/:lastName` route in the given code snippet.</strong></summary>
+<summary><strong>Describe the purpose of the <code>/hello/:firstName/:lastName</code> route in the given code snippet.</strong></summary>
 
 The `/hello/:firstName/:lastName` route is used to handle GET requests where the URL path includes two dynamic parameters: `:firstName` and `:lastName`. It allows the application to respond to requests with different values for `firstName` and `lastName` in the URL.
 </details>
 
 <details>
-<summary><strong>What are the placeholders `:firstName` and `:lastName` referred to in the route?</strong></summary>
+<summary><strong>What are the placeholders <code>:firstName</code> and <code>:lastName</code> referred to in the route?</strong></summary>
 
 The placeholders `:firstName` and `:lastName` are dynamic parameters in the route. They represent the values that can vary in the actual URL path. For example, in the URL `/hello/John/Doe`, `:firstName` is `John`, and `:lastName` is `Doe`.
 </details>
 
 <details>
-<summary><strong>How does the code extract the values of `:firstName` and `:lastName` from the URL?</strong></summary>
+<summary><strong>How does the code extract the values of <code>:firstName</code> and <code>:lastName</code> from the URL?</strong></summary>
 
 The code extracts the values of `:firstName` and `:lastName` from the URL using the `req.params` object provided by Express. The `req.params` object contains key-value pairs, where the keys correspond to the dynamic parameters defined in the route. In this case, `req.params.firstName` and `req.params.lastName` retrieve the values of `:firstName` and `:lastName`, respectively.
 </details>
 
 <details>
-<summary><strong>How does the code construct and send the response message using the extracted `firstName` and `lastName` values?</strong></summary>
+<summary><strong>How does the code construct and send the response message using the extracted <code>firstName</code> and <code>lastName</code> values?</strong></summary>
 
 The code uses string interpolation to construct the response message using the extracted `firstName` and `lastName` values. It concatenates the values within the template string using the `${}` syntax. For example, `res.send(`hello ${firstName} ${req.params.lastName}`)` constructs the response message as "hello John Doe" if `firstName` is "John" and `lastName` is "Doe".
 </details>
@@ -553,7 +553,7 @@ Having multiple parameters in a route can be beneficial in scenarios where the a
 </details>
 
 <details>
-<summary><strong>What happens if a request is made to the `/hello` route without providing values for `:firstName` and `:lastName`?</strong></summary>
+<summary><strong>What happens if a request is made to the <code>/hello</code> route without providing values for <code>:firstName</code> and <code>:lastName</code>?</strong></summary>
 
 If a request is made to the `/hello` route without providing values for `:firstName` and `:lastName`, the route will not match the requested URL, and Express will move on to the next matching route, if any. It is possible to define a separate route to handle requests to `/hello` without parameters or implement a default behavior for such cases.
 </details>
