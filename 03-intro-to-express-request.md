@@ -62,6 +62,11 @@ npm install dotenv
 ```
 
 After installing `dotenv`, you can utilize it in your project by requiring it at the entry point of your application (e.g., `server.js` or `index.js`). This will load the environment variables defined in the `.env` file into the `process.env` object, making them accessible throughout your application.
+
+```js
+// server.js OR index.js
+require("dotenv").config();
+```
 </details>
 
 ---
