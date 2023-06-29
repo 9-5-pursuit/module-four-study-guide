@@ -17,3 +17,5 @@ Welcome to the 9.5 Module 4 definitive study guide! This guide is designed to he
 3. [Intro to Express Request](./03-intro-to-express-request.md)
 4. [Express MVC](./04-express-mvc.md)
 5. [Express CRUD](./05-express-crud.md)
+6. [Express Middleware](./06-express-middleware.md)
+7. [Express with React](./07-express-with-react.md)
