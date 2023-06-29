@@ -1,14 +1,12 @@
-# Express CRUD / MVC
+# Express MVC
 
 | Term | Definition |
 | ---- | ---------- |
-| __CRUD__ | An acronym for Create, Read, Update, and Delete. It represents the basic operations performed on data in a persistent storage system, such as a database. |
 | __MVC__ | Stands for Model-View-Controller, a software architectural pattern commonly used in web development. It separates an application into three interconnected components: the Model (handles data and logic), the View (responsible for rendering and displaying data), and the Controller (manages communication between the Model and View). |
-| __Middleware__ | Functions in Express that have access to the request and response objects. They can modify the request/response, execute additional code, or terminate the request-response cycle. Middleware functions can be chained together to perform various tasks, such as authentication, logging, and error handling. |
-| __RESTful API__ | Stands for Representational State Transfer. It is an architectural style for designing networked applications that adhere to a set of principles, such as using HTTP methods (GET, POST, PUT, DELETE) for different operations and representing resources as URLs.|
 | __Model__ | Represents the data and business logic of an application in the MVC pattern. It is responsible for managing data, performing validations, and defining relationships with other models. |
 | __View__ | In the MVC pattern, the View component is responsible for rendering data and presenting it to the user. It receives data from the Model and generates the appropriate HTML, CSS, or other presentation formats. |
 | __Controller__ | In the MVC pattern, the Controller component handles user interactions, receives input, and performs appropriate actions. It interacts with the Model to update or retrieve data and coordinates with the View to render the appropriate response. |
+| __RESTful API__ | Stands for Representational State Transfer. It is an architectural style for designing networked applications that adhere to a set of principles, such as using HTTP methods (GET, POST, PUT, DELETE) for different operations and representing resources as URLs.|
 
 ---
 
@@ -77,6 +75,14 @@ If we forget to add `module.exports` in a module, when we try to import that mod
 
 The specific error message we would see when trying to import a module without `module.exports` varies depending on the environment or tool being used. However, a common error message is `TypeError: Cannot read property 'something' of undefined`, where `'something'` refers to the specific property or method we are trying to access from the imported module.
 </details>
+
+---
+
+## Views
+
+In Express MVC, views refer to the user interface components responsible for presenting data to the user and receiving user input. They play a crucial role in creating an engaging and interactive user experience.
+
+In this course, React is utilized as the primary technology for handling views in an Express MVC application. To learn more about utilizing React with Express, refer to the [React with Express Guide](./07-express-with-react.md).
 
 ---
 
