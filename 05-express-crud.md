@@ -3,7 +3,6 @@
 | Term | Definition |
 | ---- | ---------- |
 | __CRUD__ | An acronym for Create, Read, Update, and Delete. It represents the basic operations performed on data in a persistent storage system, such as a database. |
-Certainly! Here are simplified definitions for each letter in the CRUD acronym:
 | **Create** | Create refers to the operation of adding new records or entries to a database or storage system. In Express, it involves sending data to a server endpoint using HTTP POST requests. |
 | **Read** | Read refers to the operation of retrieving or fetching existing records or data from a database or storage system. In Express, it involves retrieving data from a server endpoint using HTTP GET requests. |
 | **Update** | Update refers to the operation of modifying or changing existing records or data in a database or storage system. In Express, it involves sending data to a server endpoint using HTTP PUT or PATCH requests. |
