@@ -19,7 +19,8 @@ The examples assume that you have a basic Express app setup already and will foc
 
 ```js
 // Middleware to parse JSON data
-// This middleware should be included globally in your app, we're showing it in the example snippets to reflect that it's required for the operation
+// This middleware is often included globally in your app.js file
+// We're showing it in the example snippets to reflect that it's required for the operation
 app.use(express.json());
 
 // Route for creating data
@@ -121,7 +122,8 @@ The `res.send` method sends a response of various types, such as a string, an ar
 
 ```js
 // Middleware to parse JSON data
-// This middleware should be included globally in your app, we're showing it in the example snippets to reflect that it's required for the operation
+// This middleware is often included globally in your app.js file
+// We're showing it in the example snippets to reflect that it's required for the operation
 app.use(express.json());
 
 // Route for updating data
