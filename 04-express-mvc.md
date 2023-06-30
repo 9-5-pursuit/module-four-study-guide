@@ -10,6 +10,15 @@
 
 ---
 
+## Table of Contents
+
+- [Models](#models)
+- [Views](#views)
+- [Controllers](#controllers)
+- [Error Handling](#error-handling)
+
+---
+
 ## Models
 
 ```js

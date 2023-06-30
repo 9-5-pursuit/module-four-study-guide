@@ -13,6 +13,20 @@
 
 ---
 
+## Table of Contents
+
+- [JavaScript Environments](#javascript-environments)
+- [Separating Concerns](#separating-concerns)
+- [Data Modeling](#data-modeling)
+- [Showing All Data](#showing-all-data)
+- [Showing each Individual Item in the Data](#showing-each-individual-item-in-the-data)
+- [A Common Error](#a-common-error)
+- [Placing routes in the correct order](#placing-routes-in-the-correct-order)
+- [Multiple Parameters](#multiple-parameters)
+- [Query Strings](#query-strings)
+
+---
+
 ## JavaScript Environments
 
 ```bash

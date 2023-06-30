@@ -9,6 +9,20 @@
 | __Request Object__ | The `request` object in Express represents the HTTP request sent by the client to the server. It contains information such as the URL, headers, query parameters, and request body. This object is used to retrieve and process the client's request data. |
 | __Response Object__ | The `response` object in Express represents the HTTP response sent by the server back to the client. It is used to send data, set response headers, and control the response behavior. This object allows the server to communicate with the client and send the appropriate response based on the request. |
 
+---
+
+## Table of Contents
+
+- [Editing `package.json`](#editing-packagejson)
+- [Intializing an Express Application](#intializing-an-express-application)
+- [Creating a basic route](#creating-a-basic-route)
+- [Starting the server](#starting-the-server)
+- [Putting it all together](#putting-it-all-together)
+- [Nodemon](#nodemon)
+- [grep and kill nodemon](#grep-and-kill-nodemon)
+
+---
+
 ## Editing `package.json`
 
 When editing the `package.json` file, it is important to follow proper JSON (JavaScript Object Notation) syntax. Here are some guidelines:
@@ -17,6 +31,8 @@ When editing the `package.json` file, it is important to follow proper JSON (Jav
 - Place double quotes around object keys, numbers, and booleans.
 - Ensure the JSON structure consists of valid JavaScript objects, arrays, and strings.
 - Avoid using trailing commas at the end of objects or arrays.
+
+---
 
 ## Intializing an Express Application
 
@@ -39,6 +55,8 @@ The `require("express")` statement imports the Express module, allowing us to us
 
 `const app = express()` creates an instance of the Express application. We assign it to the `app` constant, which we can then use to define routes and set up the server.
 </details>
+
+---
 
 ## Creating a basic route
 
@@ -99,6 +117,8 @@ app.post('/', (request, response) => {
 - The `response` parameter represents the HTTP response sent by the server back to the client. It is used to send data, set response headers, and control the response behavior. By using the `response` object, we can send the appropriate response to the client based on the received request.
 </details>
 
+---
+
 ## Starting the server
 
 ```js
@@ -134,6 +154,8 @@ If you change the port number to a different value in the `PORT` constant and st
 
 To gracefully shut down the Express application when it's running, you can press `Ctrl + C` in the terminal or command prompt where the server is running. This keyboard shortcut sends a signal to the server process, causing it to terminate and release the port it was using. After shutting down the server, the application will no longer be accessible.
 </details>
+
+---
 
 ## Putting it all together
 

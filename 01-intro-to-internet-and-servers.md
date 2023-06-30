@@ -1,5 +1,16 @@
 # Intro to the Internet and Servers
 
+## Table of Contents
+
+- [Components of the Internet](#components-of-the-internet)
+- [Components of a Request-Response Cycle](#components-of-a-request-response-cycle)
+- [Databases](#databases)
+- [Requests and Responses](#requests-and-responses)
+- [URL Components](#url-components)
+- [HTTP Protocol](#http-protocol)
+
+---
+
 ## Components of the Internet
 
 | Term | Definition |

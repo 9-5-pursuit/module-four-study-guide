@@ -11,6 +11,15 @@
 
 ---
 
+## Table of Contents
+
+- [Create (POST)](#create-post)
+- [Read (GET)](#read-get)
+- [Update (PUT)](#update-put)
+- [Delete (DELETE)](#delete-delete)
+
+---
+
 ## Overview
 
 The examples assume that you have a basic Express app setup already and will focus on the code required to implement CRUD operations. Things like importing modules and setting up the server are omitted for brevity.
