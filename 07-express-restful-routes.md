@@ -1,5 +1,9 @@
 # Express RESTful Routes
 
+> 📘 A Quick Note Before You Continue
+>
+> Many of the examples we'll show in this guide have been covered in the [Express CRUD](./05-express-crud.md) guide. If you're still getting used to CRUD operations, we recommend reviewing that guide first.
+
 | Term | Definition |
 | ---- | ---------- |
 | __REST__ | REST (Representational State Transfer) is an architectural style for designing web services. It uses standard HTTP methods (GET, POST, PUT, DELETE) and lightweight formats (JSON, XML) to create scalable and stateless applications. |
@@ -10,9 +14,16 @@
 | __Request Parameters__ | [Request parameters](./03-intro-to-express-request.md) provide additional information in an HTTP request. Query parameters are appended to the URL for filtering or sorting, while route parameters are part of the URL path and identify a specific resource. They allow clients to customize requests and retrieve specific data. |
 | __Response Codes__ | Response codes are standardized codes returned by a server in response to an HTTP request. They indicate the outcome of the request and guide client behavior. Common codes include 200 (OK), 404 (Not Found), and 500 (Internal Server Error). |
 
-> 📘 Just a Note Before You Continue
->
-> Many of the examples we'll show in this guide have been covered in the [Express CRUD](./05-express-crud.md) guide. If you're still getting used to CRUD operations, we recommend reviewing that guide first.
+## Table of Contents
+
+- [RESTful Routes](#restful-routes)
+- [Testing with Postman](#testing-with-postman)
+- [Show Route](#show-route)
+- [Create Route](#create-route)
+- [Delete Route](#delete-route)
+- [Update Route](#update-route)
+
+---
 
 ## Restful Routes
 
