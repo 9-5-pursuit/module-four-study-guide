@@ -63,8 +63,6 @@ The response will be the JSON representation of the bookmark located at the spec
 The response will have a status code of 404 (Not Found) and a JSON object containing the error message: `{ "error": "Not Found" }`.
 </details>
 
-<br />
-
 ### Test with Postman
 
 ![Postman GET](./images/postman-get.png)
@@ -98,8 +96,6 @@ The line `bookmarksArray.push(req.body);` adds the data from the request body (c
 
 The response will be the JSON representation of the newly created bookmark, which is the last element of the `bookmarkArray`.
 </details>
-
-<br />
 
 ### Test with Postman
 
@@ -201,8 +197,6 @@ const validateURL = (req, res, next) => {
 
 See the [Express Middleware](./06-express-middleware.md) guide for more information on middleware functions.
 </details>
-
-<br />
 
 ### Test with Postman
 
