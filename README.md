@@ -18,4 +18,9 @@ Welcome to the 9.5 Module 4 definitive study guide! This guide is designed to he
 4. [Express MVC](./04-express-mvc.md)
 5. [Express CRUD](./05-express-crud.md)
 6. [Express Middleware](./06-express-middleware.md)
-7. [Express with React](./07-express-with-react.md)
+7. [Express RESTful Routes](./07-express-restful-routes.md)
+8. [Express with React](./08-express-react.md)
+
+## Additional Resources
+
+- [Express React Skeleton](https://github.com/9-5-pursuit/express-react-skeleton)

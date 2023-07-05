@@ -694,3 +694,9 @@ When the form is submitted, the `handleSubmit` function is called. It prevents t
 
 The input fields in the `CreateExample` component are empty by default, while the input fields in the `EditExample` component are pre-filled with the existing item data. This is because the `CreateExample` component is used to create new items, while the `EditExample` component is used to edit existing items.
 </details>
+
+---
+
+## Additional Resources
+
+- [Express React Skeleton](https://github.com/9-5-pursuit/express-react-skeleton)
