@@ -221,10 +221,10 @@ CREATE DATABASE "my-database";
 ### Drop Database
 
 ```sql
--- Drop a database
+-- Drop (delete) a database
 DROP DATABASE foo;
 
--- Drop a database if it exists
+-- Drop (delete) a database if it exists
 DROP DATABASE IF EXISTS foo;
 ```
 
@@ -287,8 +287,11 @@ CREATE TABLE houses (
 ### Drop Table
 
 ```sql
--- drop a table
+-- drop (delete) a table
 DROP TABLE foo;
+
+-- drop (delete) a table if it exists
+DROP TABLE IF EXISTS foo;
 ```
 
 ### Alter Table
