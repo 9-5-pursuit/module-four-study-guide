@@ -38,6 +38,7 @@
     - [Group By](#group-by)
     - [Aggregations](#aggregations)
     - [Combining Commands](#combining-commands)
+- [Class Drawings](#class-drawings)
 
 ---
 
