@@ -570,3 +570,9 @@ SELECT AVG(price), for_sale FROM houses GROUP BY for_sale;
 -- Show the for_sale of each group
 SELECT MAX(price), for_sale FROM houses GROUP BY for_sale;
 ```
+
+## Class Drawings
+
+In class, Pak drew out the following diagram to help us understand how the database relates to the backend (NodeJS, Express) and the frontend (React/Javascript). This is a great reference to keep in mind as we move forward.
+
+![SQL Express React Diagram](./images/sql-express-react-context.png)
