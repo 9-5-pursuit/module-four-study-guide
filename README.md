@@ -23,4 +23,5 @@ Welcome to the 9.5 Module 4 definitive study guide! This guide is designed to he
 
 ## Additional Resources
 
-- [Express React Skeleton](https://github.com/9-5-pursuit/express-react-skeleton)
+- [Express Skeleton](https://github.com/9-5-pursuit/express-skeleton)
+- [React Skeleton](https://github.com/9-5-pursuit/react-skeleton)
